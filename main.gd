@@ -55,12 +55,14 @@ func draw_face(face):
 		)
 
 func make_face():
+	var radius = randf_range(20.0, 150.0)
+
 	var face = {
 		"pos": Vector2(
-			randi_range(50, int(get_viewport_rect().size.x) - 50),
-			randi_range(50, int(get_viewport_rect().size.y) - 50)
+			randi_range(int(radius), int(get_viewport_rect().size.x - radius)),
+			randi_range(int(radius + 100), int(get_viewport_rect().size.y - radius))
 		),
-		"radius": randf_range(20.0, 150.0),
+		"radius": radius,
 		"color": Color(randf(), randf(), randf(), 1.0),
 		"happy": randi() % 2 == 0,
 		"eye_count": randi_range(2, 6)

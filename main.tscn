@@ -6,19 +6,19 @@
 script = ExtResource("1_ig7tw")
 
 [node name="Button" type="Button" parent="." unique_id=1082825135]
-custom_minimum_size = Vector2(430, 170)
+custom_minimum_size = Vector2(220, 20)
 offset_right = 420.0
 offset_bottom = 180.0
 text = "Click me!"
 
 [node name="Label_1" type="Label" parent="." unique_id=1933230561]
-custom_minimum_size = Vector2(25, 80)
+custom_minimum_size = Vector2(20, 20)
 offset_right = 40.0
 offset_bottom = 23.0
 text = "Happy: 0"
 
 [node name="Label_2" type="Label" parent="." unique_id=797965285]
-custom_minimum_size = Vector2(25, 115)
+custom_minimum_size = Vector2(20, 60)
 offset_right = 40.0
 offset_bottom = 23.0
 text = "Sad: 0"
